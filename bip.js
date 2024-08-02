@@ -27,11 +27,7 @@ function resultado(path) {
 }
 
 // Replace 'your 12-word mnemonic here' with your actual 12-word mnemonic.
-const words = ['faint', 'lonely', 'scale', 'gate', 'camera', 'shoulder', 'adult', 'game', 'medal', 'language', 'payment', 'asset', 'trial', 'load', 'escape', 'symbol', 'story', 'bomb', 'picnic', 'river', 'aerobic', 'mystery', 'honey']
-const mnemonic = "faint lonely scale gate camera shoulder adult game medal language payment asset trial load escape symbol story bomb picnic river aerobic mystery honey"
-const coringa = "example"
-//console.log(words[0])
-//console.log(words[1])
+const mnemonic = "asset trial load escape symbol story bomb picnic river aerobic mystery honey"
 
 // Convert the mnemonic to a seed
 const seed = bip39.mnemonicToSeedSync(mnemonic);
