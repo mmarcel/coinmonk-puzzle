@@ -13,7 +13,7 @@ def main():
     texto1_in_palavras = ''
 
     texto1 = texto1.split()
-    print(len(texto1))
+    
 
     for i in texto1:
         if i in palavras:

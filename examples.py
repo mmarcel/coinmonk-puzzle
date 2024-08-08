@@ -1,9 +1,9 @@
 
 from bip32 import *
 
-palavras = []
-for i in open('palavras.txt').readlines():
-    palavras.append(i[:-1])
+dicionario = []
+for i in open('dicionario.txt').readlines():
+    dicionario.append(i[:-1])
 
 
 def words_in_positions(texto, positions):
@@ -11,7 +11,7 @@ def words_in_positions(texto, positions):
     words = ''
     for i in positions:
         resp.append(str(i) + " - " + texto[i-1])
-        if texto[i-1] in palavras:
+        if texto[i-1] in dicionario:
             words = words + texto[i-1] + " "
 
     words = words[:-1]
@@ -28,7 +28,7 @@ def main():
     texto2 = texto2.split()
     #print(texto2)
 
-    posicoes1 = [2,6,9,18,22,25,45,70,86,100,114,116]
+    posicoes1 = [2,6,9,18,22,25,45,70,86,100,113,116]
     posicoes2 = [3,18,28,39,40,56,67,77,80,90,104,114]
 
     resp1 = []
@@ -44,8 +44,8 @@ def main():
     #print(resp2)
 
     print("\n")
-    #gera_dados_carteira(words1)
-    gera_dados_carteira(words2)
+    gera_dados_carteira(words1)
+    #gera_dados_carteira(words2)
 
 
 
