@@ -51,8 +51,6 @@ def main():
     private_key = ecdsa.SigningKey.from_string(private_key_bytes, curve=ecdsa.SECP256k1)
     
 
-
-    
     # Derivar a chave pública
     public_key, public_key_compressed = get_public_key(private_key)
     

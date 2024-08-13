@@ -23,8 +23,7 @@ def gera_dados_carteira(words, passwd):
         return False
     
     
-    #paths = ["m/0/0", "m/44'/0'/0'/0/0", "m/49'/0'/0'/0/0", "m/84'/0'/0'/0/0"]
-    paths = ["m/0/0", "m/44'/0'/0'/0/0", "m/49'/0'/0'/0", "m/84'/0'/0'/0/0"]
+    paths = ["m/0/0", "m/44'/0'/0'/0/0", "m/49'/0'/0'/0/0", "m/84'/0'/0'/0/0"]
     info = []
 
     for i in range(len(paths)):
