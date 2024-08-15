@@ -46,7 +46,7 @@ def main():
     print("\n")
     #print(type(private_key))
 
-    hex_key = "efa02138be2ee68881a8f2f9b87471e397e373211238b9077feeb73ad5fd19b8"
+    hex_key = "E9873D79C6D87DC0FB6A5778633389F4453213303DA61F20BD67FC233AA33262"
     private_key_bytes = bytes.fromhex(hex_key)
     private_key = ecdsa.SigningKey.from_string(private_key_bytes, curve=ecdsa.SECP256k1)
     
