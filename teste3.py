@@ -34,7 +34,13 @@ def main():
     found = False
     cont = 0
 
-    list_of_words = dictionary_words_in_text("texto_editado.txt", bip_dictionary)
+    ####Carteira a ser validada####
+    WALLET = coinmonk
+    
+    ####Arquivo a ser validado####
+    TEXTO = "texto_puro.txt"
+
+    list_of_words = dictionary_words_in_text(TEXTO, bip_dictionary)
 
     for phrase in range(len(list_of_words) - 11):
     #for comentado para tentar também com tamanho 24
@@ -56,7 +62,8 @@ def main():
 
             for wallets in resp:
                 #print(wallets)
-                if wallets == coinmonk:
+                ######Excolhe a carteira que deverá ser utilizada######
+                if wallets == WALLET:
                     print("-----ACHEI!-----")
                     print(wallets)
                     found = True

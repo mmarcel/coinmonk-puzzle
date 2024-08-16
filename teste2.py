@@ -25,8 +25,6 @@ def main():
     #texto = "journey swift little eagle parade enough obtain virtual sausage gym stone erase"
     
     
-    
-    
     #5 / texto = "fishing freshwater bends and saltwater coasts rewards anyone feeling stressed resourceful anglers usually find masterful leapers fun and admit swordfish rank overwhelming any day"
     #4 / texto = "for thousands of years wealth and information have been carried through different mediums from song and poetry to books diaries stories and art"
     #7 / texto = "what if we embedded our seed phrases into stories to develop monetary safety and sovereignty for people around the world"
@@ -42,7 +40,7 @@ def main():
     #8 / texto = "these are used by the majority of trusted wallet providers to backup and restore access to accounts instead of needing addresses together with private keys, only the seed phrases are required to access an account"
     #13 / texto = "backup seed phrases are mnemonic devices used to backup and restore access to wallets BIP-39 seed phrases were implemented to create an english language backup to be kept entirely offline these are used by the majority of trusted wallet providers to backup and restore access to accounts instead of needing addresses together with private keys only the seed phrases are required to access an account"
     
-    texto = "witch collapse practice feed shame open despair creek road again ice least"
+    #8 / texto = "witch collapse practice feed shame open despair creek road again ice least"
 
     #4 / texto = "seed phrases are often stored in a format that signals the storage of wealth"
     #5 / texto = "if found a numbered list of seed phrases can be recognized as a password to an undefined amount of money"
@@ -69,34 +67,43 @@ def main():
     #texto = "a null cipher is a specific form of steganography where unencrypted messages are stored within a larger message which conceals the secondary meaning"
     #11 - texto = "in this method a short story is written with true and decoy seed phrases interspersed among a handwritten piece of text that would fit well in a notebook"
     #texto = "these should be written on a different page to remove any connection between the text and the numbers"
-    #texto = "there are many ways to approach the development of trithemian seeds some examples could include"
-    #6 - texto = "storing seed phrases in a numbered list would put anyone at risk especially economic refugees migrants or travelers seeds can instead be embedded in poetry stories notebooks or works of art"
-    #8 - texto = "a trithemian seed is a list of cryptocurrency backup seed phrases stored in an innocuous body of writing such as a poem story or letter"
+    #2 / texto = "there are many ways to approach the development of trithemian seeds some examples could include"
+    #6 + texto = "storing seed phrases in a numbered list would put anyone at risk especially economic refugees migrants or travelers seeds can instead be embedded in poetry stories notebooks or works of art"
+    #8 / texto = "a trithemian seed is a list of cryptocurrency backup seed phrases stored in an innocuous body of writing such as a poem story or letter"
     #texto = "faint lonely scale gate camera shoulder adult game medal language payment"
     #texto = "such an asset to be represented by an experienced and mature lawyer particularly when you have a trial in front of the supreme court of the USA load your argument with logic and do not provide ways to escape"
     #texto = "symbol of cultural diversity should be used as often as possible in order to support the story our client clearly did not make that complex and improvised bomb himself they were on their way to his friend picnic by the river when he noticed a suspicious person pretending to do aerobic exercises he immediately pointed it out to his friends their whereabouts aren't a mystery during the attack they were ordering ginger tea with honey to bring to the picnic"
     #FAZER#10 - texto = "letter & GPS location this method eliminates the need for a number pair heightening strength at the cost of complexity in this case a geographic landmark is chosen that relates to a plot built around the given seed phrases"
-    #8 - texto = "the GPS coordinates of this landmark dictate the placement of the seed phrases among the body of text"
+    #8 / texto = "the GPS coordinates of this landmark dictate the placement of the seed phrases among the body of text"
     #3 + texto = "to maintain relatively easy dispersal with slight variation every digit read increases by ten so 21.493021 translates to"
     #6 + texto = "this removes the need for a number pair as the numbers are themselves embedded into the location of the central landmark of a story"
     #texto = "to maintain relatively easy dispersal with slight variation every digit read increases by ten so 21.493021 translates to this removes the need for a number pair as the numbers are themselves embedded into the location of the central landmark of a story"
-    #8 - texto = "these examples are not necessarily meant to be cryptographically secure or uncrackable under close examination they are intended to store seed phrases in a way that prevents its viewers from even thinking to search deeper into its meaning"
+    #8 / texto = "these examples are not necessarily meant to be cryptographically secure or uncrackable under close examination they are intended to store seed phrases in a way that prevents its viewers from even thinking to search deeper into its meaning"
     #12 - texto = "if these were sent as a letter carried as a notebook or both few people would have the reason and effort to investigate the sheer volume of information only you know which story contains your wealth"
-    #11 - texto = "it can be easy to overlook the point of bitcoin living in a country where people trust their government what happens to those who can’t What has happened to those who couldn’t it is truly a privilege to be unaware of the importance of trust"
+    #5 / texto = "only you know which story contains your wealth"
+
+    #11 / texto = "it can be easy to overlook the point of bitcoin living in a country where people trust their government what happens to those who can’t What has happened to those who couldn’t it is truly a privilege to be unaware of the importance of trust"
     #texto = "it is truly a privilege to be unaware of the importance of trust"
-    #texto = "the potential of cryptocurrencies isnt limited to the speed of transactions or speculation but rather in redefining financial autonomy by enabling people to be free to make their own decisions"
-    #texto = "the beauty of trithemian seeds is that they hide in plain sight if you have read this far you have read every word required to access a wallet with .03 BTC good luck"
-    #texto = "the beauty of trithemian seeds is that they hide in plain sight"
-    #texto = "if you have read this far you have read every word required to access a wallet with 03 BTC good luck"
-    #texto = "system control key private phrase seed ancient poem over"
+    #5 / texto = "the potential of cryptocurrencies isnt limited to the speed of transactions or speculation but rather in redefining financial autonomy by enabling people to be free to make their own decisions"
+    #12 - texto = "the beauty of trithemian seeds is that they hide in plain sight if you have read this far you have read every word required to access a wallet with .03 BTC good luck"
+    #4 / texto = "the beauty of trithemian seeds is that they hide in plain sight"
+    #4 / texto = "if you've read this far you've read every word required to access a wallet with 03 BTC good luck"
+    texto = "system control key private phrase seed ancient poem over"
     #texto = "first badge goose soup learn unique"
+
+    #testes a parte:
+    #texto = "into capital trust engage year magic"
+    #texto = "abuse about absorb access account acid"
+    #texto = "letter story phone number seed phrase"
+    #texto = "large capital trust"
 
     
     
     words = ''
     passwd = ''
     coinmonk = '1K4ezpLybootYF23TM4a8Y4NyP7auysnRo'
-    teste_iancoleman = "164npgnZ3j61DWoWmeyh8XwAsMhqKdW29r"
+    wallet_teste = "1CLTYNXRPJQLo9H1jMWD29DAdBhbHfp2V1"
+    WALLET = coinmonk
 
     palavras_in_dicionario = []
     cont = 0
@@ -125,6 +132,7 @@ def main():
 
         words = words[1:]
         #print(words)
+             
 
         resp = gera_dados_carteira(words, passwd)
         #print(resp)
@@ -133,10 +141,11 @@ def main():
             for wallets in resp:
                 #print(k)
                 #print(words)
-                if wallets == coinmonk:
-                    print("ACHEI!")
+                if wallets == WALLET:
+                    print("-----ACHEI!-----")
                     print(words)
                     print(wallets)
+                    print(resp)
                     achei = True
                     break
             if achei:
@@ -144,11 +153,13 @@ def main():
 
         if cont % 1000 == 0:
             print(cont, " ", words)
+            #print(resp)
 
 #Imprime todas as combinações
 #        print(cont, " ", words)
 
         words = ''
+    print("WALLET TESTADA: ", WALLET)
     
 if __name__ == "__main__":
     main()
