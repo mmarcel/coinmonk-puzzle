@@ -1,4 +1,8 @@
 
+import os
+import sys
+modules = os.path.abspath("../")
+sys.path.append(modules)
 import random
 from itertools import permutations
 from bip32 import *
@@ -34,11 +38,14 @@ def main():
     found = False
     cont = 0
 
+
     ####Carteira a ser validada####
     WALLET = coinmonk
     
     ####Arquivo a ser validado####
     TEXTO = "texto_puro.txt"
+    #TEXTO = "palavras_em_negrito.txt"
+    #TEXTO = "texto_exemplo.txt"
 
     list_of_words = dictionary_words_in_text(TEXTO, bip_dictionary)
 
@@ -55,13 +62,14 @@ def main():
         
         cont+=1
         resp = gera_dados_carteira(text, "")
+        #print(resp)
         text = ''
         #print(cont)
         if resp:
             #print(resp)
 
             for wallets in resp:
-                #print(wallets)
+                print(wallets)
                 ######Excolhe a carteira que deverá ser utilizada######
                 if wallets == WALLET:
                     print("-----ACHEI!-----")
@@ -77,8 +85,6 @@ def main():
 
     print(len(list_of_words))
     
-
-        
     
 if __name__ == "__main__":
     main()

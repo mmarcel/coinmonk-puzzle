@@ -13,6 +13,8 @@ Em seguida verifica sequencialmente se 12 palavras geram o BIP39 até o final da
 Ex: inicia na posição [0,12], em seguida [1,13], em seguida, [2,14], e assim por diante.
 OBS: Percebi que existem palavras que fazem parte do dicionário porém estão contraídas, ex: "you've" que representa "you have", o "have" faz parte do dicionário, porém não está sendo inserido/validado por essa contração da lingua inglesa, talvez seja necessário fazer uma mudança nestas palavras. Por isso exitem os arquivos "texto_puro.txt" que não tem alteração e o "texto_editado.txt", que tem essas alterações nas palavras. - Em validação
 
+- [x] example1_pos113: voltando ao exemplo1, onde não é possível gerar o BIP39 por que na posição 113 não existe uma palavra que faz parte do dicionário, criei o example1_pos113.py que testa a substituição da palavra "a" (posição 113) por todas as outras palavras do dicionário. - Não funcionou
+
 
 
 ## 3 - Analisar as imagens

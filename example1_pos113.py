@@ -1,4 +1,8 @@
 
+import os
+import sys
+modules = os.path.abspath("../")
+sys.path.append(modules)
 from bip32 import *
 
 dicionario = []

@@ -1,12 +1,21 @@
 
+from teste3 import dictionary_words_in_text
+import os
+import sys
+modules = os.path.abspath("../")
+sys.path.append(modules)
 from bip32 import *
 
+#Criar uma lista com os nomes do dicionário BIP39
 dicionario = []
 for i in open('dicionario.txt').readlines():
     dicionario.append(i[:-1])
 
-
-def words_in_positions(texto, positions):
+#Função que recebe como parâmetros um texto e as posições
+#em que deve ser validado se a palavra faz parte do dicionário
+#BIP39. Retorna as palavras no formato string com um
+#espaço entre elas
+def words_in_positions(texto, positions) -> str:
     resp = []
     words = ''
     for i in positions:

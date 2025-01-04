@@ -1,4 +1,7 @@
-
+import os
+import sys
+modules = os.path.abspath("../")
+sys.path.append(modules)
 import random
 from itertools import permutations
 from bip32 import *
@@ -27,7 +30,7 @@ def main():
     
     #5 / texto = "fishing freshwater bends and saltwater coasts rewards anyone feeling stressed resourceful anglers usually find masterful leapers fun and admit swordfish rank overwhelming any day"
     #4 / texto = "for thousands of years wealth and information have been carried through different mediums from song and poetry to books diaries stories and art"
-    #7 / texto = "what if we embedded our seed phrases into stories to develop monetary safety and sovereignty for people around the world"
+    #texto = "what if we embedded our seed phrase into story to develop monetary safety and sovereignty for people around the world"
     #11 / texto = "for thousands of years wealth and information have been carried through different mediums from song and poetry to books diaries stories and art what if we embedded our seed phrases into stories to develop monetary safety and sovereignty for people around the world"
     #4 / texto = "despite excelling as a method of developing monetary sovereignty and transporting wealth in economic crises bitcoin falls short in a few areas"
     #7 / texto = "if recognized by regimes or thieves public addresses private keys backup seed phrases or hardware wallets can be seen as a notable sign of wealth making anyone vulnerable to theft confiscation or extortion"
@@ -41,6 +44,7 @@ def main():
     #13 / texto = "backup seed phrases are mnemonic devices used to backup and restore access to wallets BIP-39 seed phrases were implemented to create an english language backup to be kept entirely offline these are used by the majority of trusted wallet providers to backup and restore access to accounts instead of needing addresses together with private keys only the seed phrases are required to access an account"
     
     #8 / texto = "witch collapse practice feed shame open despair creek road again ice least"
+    texto = "open despair creek road again ice"
 
     #4 / texto = "seed phrases are often stored in a format that signals the storage of wealth"
     #5 / texto = "if found a numbered list of seed phrases can be recognized as a password to an undefined amount of money"
@@ -88,7 +92,7 @@ def main():
     #12 - texto = "the beauty of trithemian seeds is that they hide in plain sight if you have read this far you have read every word required to access a wallet with .03 BTC good luck"
     #4 / texto = "the beauty of trithemian seeds is that they hide in plain sight"
     #4 / texto = "if you've read this far you've read every word required to access a wallet with 03 BTC good luck"
-    texto = "system control key private phrase seed ancient poem over"
+    #texto = "system control key private phrase seed ancient poem over"
     #texto = "first badge goose soup learn unique"
 
     #testes a parte:
@@ -96,6 +100,24 @@ def main():
     #texto = "abuse about absorb access account acid"
     #texto = "letter story phone number seed phrase"
     #texto = "large capital trust"
+    
+    #texto = "Securing Wealth in Poetry Revolution Fiat Bitcoin Despite excelling as a method of developing monetary sovereignty and transporting wealth in economic crises, bitcoin falls short in a few areas Touchpoints Example Private Key Seed Phrase Steganography What if we embedded our seed phrases into stories to develop monetary safety and sovereignty for people around the world Trithemian Seeds Story & phone number Letter & GPS location References"
+
+    #texto = "wealth method wealth short few example private key seed phrase what seed"
+    #texto = "method wealth short few example private key seed phrase what seed into"
+    #texto = "wealth short few example private key seed phrase what seed into develop"
+    #texto = "short few example private key seed phrase what seed into develop people"
+    #texto = "few example private key seed phrase what seed into develop people around"
+    #texto = "example private key seed phrase what seed into develop people around world"
+    #texto = "private key seed phrase what seed into develop people around world story"
+    #texto = "key seed phrase what seed into develop people around world story phone"
+    #texto = "seed phrase what seed into develop people around world story phone number"
+    #texto = "phrase what seed into develop people around world story phone number letter"
+    #texto = "Civil among find over that decade time during early family large into"
+
+    #PUZZLE Irrational
+    #texto = "Today I wanted to do something special. I have been in Bitcoin for many years now. And I've loved it. I want to have you all the chance to win 0.02 bitcoin ≈ $2,000.00 best of luck to you all."# Everything for the private key can be found within this message."
+    #texto = "Everything for the private key can be found within this message"
 
     
     
@@ -103,6 +125,7 @@ def main():
     passwd = ''
     coinmonk = '1K4ezpLybootYF23TM4a8Y4NyP7auysnRo'
     wallet_teste = "1CLTYNXRPJQLo9H1jMWD29DAdBhbHfp2V1"
+    irrational = 'bc1qr5mssp6snmduqp9enx4dzmcxvk7qw83lceyy2v'
     WALLET = coinmonk
 
     palavras_in_dicionario = []
@@ -111,8 +134,8 @@ def main():
     texto_lista = texto.split()
 
     for i in texto_lista:
-        if i in dicionario:
-            palavras_in_dicionario.append(i)
+        if i.lower() in dicionario:
+            palavras_in_dicionario.append(i.lower())
             
 
     print(len(palavras_in_dicionario), " - ", math.factorial(len(palavras_in_dicionario)), " combinações")
@@ -133,7 +156,6 @@ def main():
         words = words[1:]
         #print(words)
              
-
         resp = gera_dados_carteira(words, passwd)
         #print(resp)
 
@@ -153,10 +175,9 @@ def main():
 
         if cont % 1000 == 0:
             print(cont, " ", words)
-            #print(resp)
 
 #Imprime todas as combinações
-#        print(cont, " ", words)
+        #print(cont, " ", words)
 
         words = ''
     print("WALLET TESTADA: ", WALLET)
